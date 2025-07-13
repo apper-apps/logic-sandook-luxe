@@ -1,0 +1,243 @@
+[
+  {
+    "Id": 1,
+    "name": "Royal Emerald Necklace",
+    "category": "Precious Gemstone Jewellery",
+    "price": 125000,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Exquisite emerald necklace featuring carefully selected Colombian emeralds set in 18k gold. Each stone is hand-picked for its exceptional clarity and vibrant green color.",
+    "specifications": {
+      "metal": "18k Gold",
+      "gemstone": "Colombian Emerald",
+      "caratWeight": "15.5 carats",
+      "length": "16 inches",
+      "clasp": "Secure lobster clasp"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "Id": 2,
+    "name": "Diamond Solitaire Ring",
+    "category": "Fine Jewellery",
+    "price": 89000,
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Classic diamond solitaire ring featuring a brilliant cut diamond in a timeless setting. Perfect for engagements or special occasions.",
+    "specifications": {
+      "metal": "Platinum",
+      "gemstone": "Diamond",
+      "caratWeight": "1.2 carats",
+      "cut": "Brilliant Round",
+      "clarity": "VS1",
+      "color": "F"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "Id": 3,
+    "name": "Sapphire Tennis Bracelet",
+    "category": "Precious Gemstone Jewellery",
+    "price": 67000,
+    "images": [
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Stunning sapphire tennis bracelet with alternating blue sapphires and diamonds. A perfect blend of elegance and sophistication.",
+    "specifications": {
+      "metal": "18k White Gold",
+      "gemstone": "Blue Sapphire & Diamond",
+      "totalCarats": "8.5 carats",
+      "length": "7 inches",
+      "setting": "Prong Setting"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "Id": 4,
+    "name": "CZ Chandelier Earrings",
+    "category": "CZ Jewellery",
+    "price": 12500,
+    "images": [
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Glamorous chandelier earrings featuring high-quality cubic zirconia stones that sparkle like diamonds. Perfect for special events.",
+    "specifications": {
+      "metal": "Sterling Silver",
+      "gemstone": "Cubic Zirconia",
+      "totalStones": "42 pieces",
+      "length": "2.5 inches",
+      "backing": "Post & Butterfly"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "Id": 5,
+    "name": "Ruby Pendant Set",
+    "category": "Precious Gemstone Jewellery",
+    "price": 95000,
+    "images": [
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Magnificent ruby pendant set with matching earrings. Features Burmese rubies known for their exceptional color and brilliance.",
+    "specifications": {
+      "metal": "22k Gold",
+      "gemstone": "Burmese Ruby",
+      "pendantWeight": "6.2 carats",
+      "earringWeight": "3.8 carats",
+      "chainLength": "18 inches"
+    },
+    "inStock": false,
+    "featured": true
+  },
+  {
+    "Id": 6,
+    "name": "Pearl Strand Necklace",
+    "category": "Fine Jewellery",
+    "price": 45000,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Classic pearl strand necklace featuring lustrous South Sea pearls. A timeless piece that complements any outfit.",
+    "specifications": {
+      "pearlType": "South Sea Pearls",
+      "pearlSize": "8-10mm",
+      "length": "18 inches",
+      "clasp": "14k Gold Clasp",
+      "luster": "Excellent"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "Id": 7,
+    "name": "CZ Cocktail Ring",
+    "category": "CZ Jewellery",
+    "price": 8500,
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Bold cocktail ring featuring a large center CZ stone surrounded by smaller accent stones. Makes a stunning statement piece.",
+    "specifications": {
+      "metal": "Sterling Silver",
+      "centerStone": "8mm CZ",
+      "accentStones": "16 pieces",
+      "ringSize": "Adjustable",
+      "finish": "Rhodium Plated"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "Id": 8,
+    "name": "Gold Bangle Set",
+    "category": "Fine Jewellery",
+    "price": 78000,
+    "images": [
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Traditional gold bangle set with intricate carved patterns. Perfect for weddings and special ceremonies.",
+    "specifications": {
+      "metal": "22k Gold",
+      "weight": "45 grams",
+      "diameter": "2.5 inches",
+      "pattern": "Traditional Carved",
+      "quantity": "2 pieces"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "Id": 9,
+    "name": "Tanzanite Drop Earrings",
+    "category": "Precious Gemstone Jewellery",
+    "price": 52000,
+    "images": [
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Elegant tanzanite drop earrings showcasing the rare blue-purple gemstone in a sophisticated setting.",
+    "specifications": {
+      "metal": "18k White Gold",
+      "gemstone": "Tanzanite",
+      "caratWeight": "4.2 carats",
+      "length": "1.5 inches",
+      "backing": "Lever Back"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "Id": 10,
+    "name": "CZ Statement Necklace",
+    "category": "CZ Jewellery",
+    "price": 15500,
+    "images": [
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Dramatic statement necklace featuring cascading CZ stones in various cuts. Perfect for making an impression at formal events.",
+    "specifications": {
+      "metal": "Gold Plated",
+      "stones": "Multi-cut CZ",
+      "totalStones": "86 pieces",
+      "length": "16-18 inches",
+      "clasp": "Adjustable Chain"
+    },
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "Id": 11,
+    "name": "Diamond Eternity Band",
+    "category": "Fine Jewellery",
+    "price": 72000,
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Timeless diamond eternity band with perfectly matched stones. Symbolizes eternal love and commitment.",
+    "specifications": {
+      "metal": "Platinum",
+      "gemstone": "Diamond",
+      "totalCarats": "2.5 carats",
+      "stoneCount": "25 pieces",
+      "bandWidth": "3mm"
+    },
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "Id": 12,
+    "name": "Amethyst Cluster Ring",
+    "category": "Precious Gemstone Jewellery",
+    "price": 28000,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    ],
+    "description": "Unique amethyst cluster ring featuring multiple purple amethyst stones in an organic arrangement.",
+    "specifications": {
+      "metal": "Sterling Silver",
+      "gemstone": "Amethyst",
+      "totalCarats": "6.8 carats",
+      "ringSize": "6-8 (adjustable)",
+      "setting": "Cluster Setting"
+    },
+    "inStock": true,
+    "featured": false
+  }
+]

@@ -6,6 +6,7 @@ import Button from "@/components/atoms/Button"
 import FormField from "@/components/molecules/FormField"
 import { useCart } from "@/hooks/useCart"
 import { toast } from "react-toastify"
+import { PaymentService } from "@/services/api/PaymentService"
 
 const Checkout = () => {
   const navigate = useNavigate()
@@ -62,20 +63,53 @@ const Checkout = () => {
     setStep(2)
   }
 
-  const handlePaymentSubmit = async (e) => {
+const handlePaymentSubmit = async (e) => {
     e.preventDefault()
     setIsProcessing(true)
 
     try {
-      // Simulate payment processing
-      await new Promise(resolve => setTimeout(resolve, 3000))
-      
-      // Create order
+      let paymentResult
+
+      if (paymentInfo.method === "razorpay") {
+        // Handle Razorpay payment
+        const order = await PaymentService.createRazorpayOrder(total)
+        
+        paymentResult = await new Promise((resolve, reject) => {
+          PaymentService.initializeRazorpayPayment({
+            amount: total,
+            order_id: order.id,
+            customerInfo: shippingInfo,
+            onSuccess: (paymentDetails) => {
+              resolve(paymentDetails)
+            },
+            onFailure: (error) => {
+              reject(error)
+            }
+          })
+        })
+      } else {
+        // Handle Stripe payment
+        if (!paymentInfo.nameOnCard || !paymentInfo.cardNumber || !paymentInfo.expiryDate || !paymentInfo.cvv) {
+          toast.error("Please fill in all card details")
+          return
+        }
+
+        paymentResult = await PaymentService.processStripePayment({
+          amount: total,
+          paymentInfo,
+          customerInfo: shippingInfo
+        })
+      }
+
+      // Create order after successful payment
       const order = {
         Id: Date.now(),
         items: cartItems,
         shipping: shippingInfo,
-        payment: paymentInfo,
+        payment: {
+          ...paymentInfo,
+          paymentDetails: paymentResult
+        },
         subtotal,
         shipping: shipping,
         tax,
@@ -91,7 +125,7 @@ const Checkout = () => {
       navigate("/", { replace: true })
       
     } catch (error) {
-      toast.error("Payment failed. Please try again.")
+      toast.error(error.message || "Payment failed. Please try again.")
     } finally {
       setIsProcessing(false)
     }

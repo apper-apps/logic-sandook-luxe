@@ -1,16 +1,19 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { useSelector } from 'react-redux'
 import { motion, AnimatePresence } from "framer-motion"
 import ApperIcon from "@/components/ApperIcon"
 import Button from "@/components/atoms/Button"
 import SearchBar from "@/components/molecules/SearchBar"
 import { useCart } from "@/hooks/useCart"
-
+import { AuthContext } from '@/App'
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { cartItems } = useCart()
   const navigate = useNavigate()
+  const { logout } = useContext(AuthContext)
+  const { user, isAuthenticated } = useSelector((state) => state.user)
 
   const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0)
 
@@ -94,8 +97,26 @@ const Header = () => {
               <SearchBar onSearch={handleSearch} />
             </div>
 
-            {/* Right Actions */}
+{/* Right Actions */}
             <div className="flex items-center space-x-4">
+              {/* User Info & Logout */}
+              {isAuthenticated && (
+                <div className="hidden lg:flex items-center space-x-3">
+                  <span className="text-sm text-charcoal-700">
+                    Welcome, {user?.firstName || user?.name || 'User'}
+                  </span>
+                  <Button
+                    onClick={logout}
+                    variant="ghost"
+                    size="sm"
+                    className="text-charcoal-700 hover:text-gold-600"
+                  >
+                    <ApperIcon name="LogOut" className="h-4 w-4 mr-1" />
+                    Logout
+                  </Button>
+                </div>
+              )}
+
               {/* Cart */}
               <Link to="/cart" className="relative">
                 <Button variant="ghost" size="sm" className="relative">
@@ -180,14 +201,36 @@ const Header = () => {
                       </Link>
                     </div>
                   </div>
-                  
-                  <Link
+<Link
                     to="/contact"
                     className="block text-charcoal-700 hover:text-gold-600 transition-colors font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Contact
                   </Link>
+
+                  {/* Mobile Logout */}
+                  {isAuthenticated && (
+                    <div className="pt-6 border-t border-gray-200">
+                      <div className="mb-3">
+                        <p className="text-sm text-charcoal-600">
+                          Signed in as: {user?.firstName || user?.name || 'User'}
+                        </p>
+                      </div>
+                      <Button
+                        onClick={() => {
+                          logout()
+                          setIsMobileMenuOpen(false)
+                        }}
+                        variant="outline"
+                        size="sm"
+                        className="w-full"
+                      >
+                        <ApperIcon name="LogOut" className="h-4 w-4 mr-2" />
+                        Logout
+                      </Button>
+                    </div>
+                  )}
                 </nav>
               </div>
             </motion.div>

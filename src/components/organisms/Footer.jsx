@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6 max-w-md">
               Discover exquisite luxury jewelry crafted with precision and passion. 
               From precious gemstones to fine jewelry, we bring you timeless elegance 
-              from the heart of Delhi, India.
+              from the heart of Delhi & Panchkula, India.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" className="text-white hover:text-gold-500 hover:bg-gold-500/10">
@@ -81,10 +81,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <ApperIcon name="Phone" className="h-5 w-5 text-gold-500" />
                 <a 
-                  href="tel:+919876543210" 
+                  href="tel:+918076775423" 
                   className="text-gray-300 hover:text-gold-500 transition-colors text-sm"
                 >
-                  +91 98765 43210
+                  +91 80767 75423
                 </a>
               </div>
             </div>

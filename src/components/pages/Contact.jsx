@@ -177,7 +177,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-charcoal-900 mb-1">Address</h3>
                     <p className="text-gray-600">
-                      Karol Bagh, New Delhi<br />
+                      New Delhi<br />
                       Delhi 110005, India
                     </p>
                   </div>
@@ -190,10 +190,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-charcoal-900 mb-1">Phone</h3>
                     <a 
-                      href="tel:+919876543210" 
+                      href="tel:+918076775423" 
                       className="text-gray-600 hover:text-gold-600 transition-colors"
                     >
-                      +91 98765 43210
+                      +91 80767 75423
                     </a>
                   </div>
                 </div>
